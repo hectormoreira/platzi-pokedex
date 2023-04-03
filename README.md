@@ -1,6 +1,9 @@
-# Notas del [Curso Práctico de React Native: Manejo de Listas y Consumo de APIs](https://platzi.com/cursos/react-native-listas-apis/)
+# Notas de la Ruta Desarrollo de Apps Multiplataforma - React Native
 
 Platzi: Ruta **Desarrollo de Apps Multiplataforma**
+
+- [Curso Práctico de React Native: Manejo de Listas y Consumo de APIs](https://platzi.com/cursos/react-native-listas-apis/)
+- [Curso Práctico de React Native: Formularios, Almacenamiento y Deploy](https://platzi.com/cursos/react-native-formularios-almacenamiento/)
 
 ## Docs
 
@@ -58,3 +61,12 @@ const styles = StyleSheet.create({
 ## Apis & docs
 
 - [Pokemon API](https://pokeapi.co/)
+
+# [Curso Práctico de React Native: Formularios, Almacenamiento y Deploy](https://platzi.com/cursos/react-native-formularios-almacenamiento/)
+
+### Dependencias
+- Formik
+- Yup
+```
+yarn add formik yup
+```
