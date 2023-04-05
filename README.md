@@ -65,8 +65,12 @@ const styles = StyleSheet.create({
 # [Curso Práctico de React Native: Formularios, Almacenamiento y Deploy](https://platzi.com/cursos/react-native-formularios-almacenamiento/)
 
 ### Dependencias
+
 - Formik
 - Yup
+- [async-storage](https://yarnpkg.com/package/@react-native-community/async-storage)
+
 ```
 yarn add formik yup
+yarn add @react-native-async-storage/async-storage
 ```
