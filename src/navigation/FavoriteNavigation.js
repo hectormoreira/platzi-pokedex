@@ -1,6 +1,7 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import FavoriteScreen from "../screen/FavoriteScreen";
+import PokemonScreen from "../screen/PokemonScreen";
 
 const Stack = createStackNavigator();
 
@@ -13,6 +14,15 @@ export default function FavoriteNavigation() {
         options={{
           title: "Favoritos",
           headerTitleAlign: "center",
+        }}
+      />
+
+      <Stack.Screen
+        name="Pokemon"
+        component={PokemonScreen}
+        options={{
+          title: "",
+          headerTransparent: true,
         }}
       />
     </Stack.Navigator>
