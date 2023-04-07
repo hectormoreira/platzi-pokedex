@@ -10,20 +10,39 @@ Platzi: Ruta **Desarrollo de Apps Multiplataforma**
 - [Build setup expo](https://docs.expo.dev/build/setup/)
 - [Build for app stores](https://docs.expo.dev/build/setup/#build-for-app-stores)
 - [Build APKs for Android Emulators and devices](https://docs.expo.dev/build-reference/apk/)
+- [Configuring a profile to build APKs](https://docs.expo.dev/build-reference/apk/#configuring-a-profile-to-build-apks)
 
 ```
 npm install -g eas-cli
 eas login
 eas build:configure
+```
+> generar .aab: `eas build -p android`
 
+> generar .apk: `eas build -p android --profile preview` se debe editar el archivo `eas.json`
 
-
-eas build -p android
-
-
+```json
+{
+  "build": {
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      }
+    },
+    "preview3": {
+      "developmentClient": true
+    },
+    "production": {}
+  }
+}
 ```
 
-> generar apk `eas build -p android`
+
 
 ## Docs
 
