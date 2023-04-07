@@ -5,6 +5,26 @@ Platzi: Ruta **Desarrollo de Apps Multiplataforma**
 - [Curso Práctico de React Native: Manejo de Listas y Consumo de APIs](https://platzi.com/cursos/react-native-listas-apis/)
 - [Curso Práctico de React Native: Formularios, Almacenamiento y Deploy](https://platzi.com/cursos/react-native-formularios-almacenamiento/)
 
+## Publish app
+
+- [Build setup expo](https://docs.expo.dev/build/setup/)
+- [Build for app stores](https://docs.expo.dev/build/setup/#build-for-app-stores)
+- [Build APKs for Android Emulators and devices](https://docs.expo.dev/build-reference/apk/)
+
+```
+npm install -g eas-cli
+eas login
+eas build:configure
+
+
+
+eas build -p android
+
+
+```
+
+> generar apk `eas build -p android`
+
 ## Docs
 
 - [React navigation](https://reactnavigation.org/docs/getting-started)
